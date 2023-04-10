@@ -1,0 +1,114 @@
+.tabs-section {
+  width: 1170px;
+  margin: 99px auto 0 auto;
+}
+
+.tabs-section__tabs-bar {
+  display: flex;
+  height: 40px;
+}
+
+.tabs-section__tabs-bar__button {
+  width: 203px;
+  height: 40px;
+
+  cursor: pointer;
+
+  padding: 1px 0px;
+  background-color: white;
+  border: 1px solid white;
+  border-bottom: 1px solid #c6cbcd;
+}
+
+.tabs-section__tabs-bar__button:focus {
+  outline: none;
+  border: 1px solid #c6cbcd;
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.tabs-section__tabs-bar__button__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  cursor: pointer;
+
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.tabs-section__tabs-bar__invisible {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 40px;
+  width: 561px;
+  border-bottom: 1px solid #c6cbcd;
+}
+
+.tabs-section__tab-content {
+  display: flex;
+  box-sizing: border-box;
+  height: 501px;
+  width: 100%;
+  border: 1px solid #c6cbcd;
+  border-top: none;
+  margin-bottom: 50px;
+}
+
+.tabs-section__tab-content__text-data {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tabs-section__tab-content__header {
+  width: 570px;
+  height: 124px;
+  margin: 0 0 27px 100px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+}
+
+.tabs-section__tab-content__main-text {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  height: 210px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 0 100px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.tabs-section__tab-content__button {
+  height: 58px;
+  width: 270px;
+  margin-left: 100px;
+
+  cursor: pointer;
+
+  border: none;
+  background: #ec7979;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: white;
+}
