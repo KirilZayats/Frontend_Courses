@@ -1,0 +1,166 @@
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1508px;
+  margin: 0 auto;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.pricing-section__header {
+  height: 150px;
+  margin: 50px 0 0 0;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-section__bottom-border {
+  height: 0px;
+  width: 170px;
+
+  border-top: 1px solid #ec7979;
+  margin: 0 auto 40px auto;
+}
+
+.pricing-section__before-scriptum {
+  margin: 0;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #86878b;
+}
+
+.pricing-section__rate-info {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 79px;
+  width: 370px;
+}
+
+.pricing-section__rates {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 30px;
+  width: 100%;
+}
+
+.pricing-section__rate-info__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f5f5f5;
+  box-sizing: border-box;
+}
+
+.rate-info__tab__name {
+  height: 60px;
+  background: #333333;
+}
+
+.rate-info__tab__name__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.rate-info__tab__price {
+  height: 100px;
+
+  background: #333333;
+  border: 1px solid #f5f5f5;
+}
+
+.rate-info__tab__price__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.rate-info__tab__type {
+  height: 50px;
+
+  background: #333333;
+}
+
+.rate-info__tab__type__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.rate-info__tab__params {
+  height: 50px;
+
+  background: #ffffff;
+}
+
+.rate-info__tab__params__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #86878b;
+}
+
+.pricing-section__rate-info:hover {
+  box-sizing: border-box;
+  margin-top: 50px;
+  height: 510px;
+  -webkit-box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
+  -moz-box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
+  box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
+}
+
+.pricing-section__rates:not(:hover) .rate-info__active {
+    box-sizing: border-box;
+    margin-top: 50px;
+    height: 510px;
+    -webkit-box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
+    -moz-box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
+    box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
+}
