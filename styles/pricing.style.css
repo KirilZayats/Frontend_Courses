@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1508px;
+  width: 100%;
   margin: 0 auto;
   justify-content: center;
   background: #f5f5f5;
@@ -27,7 +27,7 @@
   width: 170px;
 
   border-top: 1px solid #ec7979;
-  margin: 0 auto 40px auto;
+  margin: 0 0 40px 0;
 }
 
 .pricing-section__before-scriptum {
@@ -55,10 +55,9 @@
 .pricing-section__rates {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 50px;
-  gap: 30px;
-  width: 100%;
+  width: 1170px;
 }
 
 .pricing-section__rate-info__tab {
@@ -151,16 +150,12 @@
   box-sizing: border-box;
   margin-top: 50px;
   height: 510px;
-  -webkit-box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
-  -moz-box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
   box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
 }
 
 .pricing-section__rates:not(:hover) .rate-info__active {
-    box-sizing: border-box;
-    margin-top: 50px;
-    height: 510px;
-    -webkit-box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
-    -moz-box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
-    box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
+  box-sizing: border-box;
+  margin-top: 50px;
+  height: 510px;
+  box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
 }
