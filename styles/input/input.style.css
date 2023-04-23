@@ -1,0 +1,16 @@
+.input-1 {
+  position: relative;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #bdbdbd;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+}
+

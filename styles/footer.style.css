@@ -1,0 +1,22 @@
+.footer-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding-top: 40.54px;
+  padding-bottom: 27px;
+}
+
+.footer-body__social-media-block {
+  display: flex;
+  margin-bottom: 32.23px;
+  align-items: center;
+  gap: 43.88px;
+}
+
+.water-mark {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.5);
+}

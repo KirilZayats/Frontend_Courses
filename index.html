@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles/awesome.style.css" rel="stylesheet" />
-    <link href="styles/tabs.style.css" rel="stylesheet" />
-    <link href="styles/pricing.style.css" rel="stylesheet" />
-    <link href="styles/customers.style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/common.style.css" />
+    <link rel="stylesheet" href="styles/header.style.css" />
+    <link rel="stylesheet" href="styles/body.style.css" />
+    <link rel="stylesheet" href="styles/media.style.css" />
+    <link rel="stylesheet" href="styles/awesome.style.css" />
+    <link rel="stylesheet" href="styles/tabs.style.css" />
+    <link rel="stylesheet" href="styles/pricing.style.css" />
+    <link rel="stylesheet" href="styles/customers.style.css" />
+    <link rel="stylesheet" href="styles/stylish.style.css" />
+    <link rel="stylesheet" href="styles/contacts.style.css" />
+    <link rel="stylesheet" href="styles/footer.style.css" />
+    <link rel="stylesheet" href="styles/banner.style.css" />
+    <link rel="stylesheet" href="styles/buttons/buttons.style.css" />
+    <link rel="stylesheet" href="styles/input/input.style.css" />
+    <link rel="stylesheet" href="styles/navigation/navigation.style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap"
       rel="stylesheet"
@@ -19,10 +30,146 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>AXIT</title>
   </head>
   <body>
+    <header class="header-body">
+      <div class="header-body__label">
+        <img
+          class="header-body__ax-latters"
+          src="images/label/axit-1_img.png"
+          alt="AX"
+        />
+        <img
+          class="header-body__it-latters"
+          src="images/label/axit-2_img.png"
+          alt="IT"
+        />
+      </div>
+      <nav class="header-body__nav">
+        <button class="navigation navigation-text">features</button>
+        <button class="navigation navigation-text">About</button>
+        <button class="navigation navigation-text">Pricing</button>
+        <button class="navigation navigation-text">Reviews</button>
+        <button class="navigation navigation-text">Contact</button>
+      </nav>
+    </header>
     <main class="main-body">
+      <section class="banner-section">
+        <div class="banner-section__main-div">
+          <div class="banner-section__info-with-form-box">
+            <div class="banner-section__logo-with-header">
+              <img
+                class="banner-section__logo"
+                src="images/banner/logo.svg"
+                alt="logo AXIT"
+              />
+              <h1 class="banner-section__header">
+                MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
+              </h1>
+              <div class="banner-section__bottom-border"></div>
+              <h5 class="banner-section__before-scriptum">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </h5>
+            </div>
+            <form action="" class="banner-section__form">
+              <h4 class="banner-section__form-header">
+                Try Your<span
+                  class="banner-section__form-header form-header_color_red"
+                > FREE </span>Trial Today</h4>
+              <div class="banner-section__inputs-block">
+                <input
+                  type="text"
+                  class="input-1 banner-section_input-1"
+                  placeholder="Name"
+                />
+                <input
+                  type="email"
+                  class="input-1 banner-section_input-1"
+                  placeholder="Email"
+                />
+                <input
+                  type="password"
+                  class="input-1 banner-section_input-1"
+                  placeholder="Password"
+                />
+              </div>
+              <button class="button-2 button-text banner-section__button-2">
+                Get Started
+              </button>
+            </form>
+          </div>
+          <button class="button-1 button-text banner-section__button-1">
+            Download
+          </button>
+        </div>
+      </section>
+      <section class="media-section">
+        <div class="media-section__info-block">
+          <div class="media-section__text">
+            <h4 class="media-section__text-header">Social Media</h4>
+            <h5 class="media-section__text-main">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              euismod bibendum laoreet.
+            </h5>
+          </div>
+          <nav class="media-section__links">
+            <a href="" class="media-section__link">
+              <img
+                src="images/social-media/facebook_img.svg"
+                alt="facebook"
+                class="media-section__link-img"
+              />
+            </a>
+            <a href="" class="media-section__link">
+              <img
+                src="images/social-media/twitter_img.svg"
+                alt="twitter"
+                class="media-section__link-img"
+              />
+            </a>
+            <a href="" class="media-section__link">
+              <img
+                src="images/social-media/linkedin_img.svg"
+                alt="linkedin"
+                class="media-section__link-img"
+              />
+            </a>
+            <a href="" class="media-section__link">
+              <img
+                src="images/social-media/printers_img.svg"
+                alt="printers"
+                class="media-section__link-img"
+              />
+            </a>
+            <a href="" class="media-section__link">
+              <img
+                src="images/social-media/instagram_img.svg"
+                alt="instagram"
+                class="media-section__link-img"
+              />
+            </a>
+            <a href="" class="media-section__link">
+              <img
+                src="images/social-media/github_img.svg"
+                alt="github"
+                class="media-section__link-img"
+              />
+            </a>
+            <a href="" class="media-section__link">
+              <img
+                src="images/social-media/rss_img.svg"
+                alt="rss"
+                class="media-section__link-img"
+              />
+            </a>
+          </nav>
+        </div>
+      </section>
       <section class="tabs-section">
         <nav class="tabs-section__tabs-bar">
           <button
@@ -56,22 +203,22 @@
             </h3>
             <h5 class="tabs-section__tab-content__main-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
-              accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
-              Cum sociis natoque penatibus et magnis dis parturient montes.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet.Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida
-              dolor sit amet lacus accumsan et viverra justo commodo. Proin
-              sodales pulvinar tempor.
+              euismod bibendum laoreet. Proin gravida dolor sit amet
+              lacusaccumsan et viverra justo commodo. Proin sodales pulvinar
+              tempor. Cum sociis natoque penatibus et magnis dis parturient
+              montes. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Aenean euismod bibendum laoreet.
             </h5>
-            <button class="tabs-section__tab-content__button" type="button">
+            <button
+              class="button-3 button-text tabs-section__button-3"
+              type="button"
+            >
               Download
             </button>
           </div>
           <img
             class="tabs-section__tab-content__img"
-            src="images/tab_img.png"
+            src="images/tabs/tab_img.png"
             alt="statue of liberty"
           />
         </div>
@@ -86,7 +233,7 @@
           <div class="awesome-section__advisement-list__content-block">
             <img
               class="awesome-section__advisement-list__content-block__img"
-              src="images/idea_icon.png"
+              src="images/awesome/idea_icon.png"
               alt="idea icon"
             />
             <h4 class="awesome-section__advisement-list__content-block__header">
@@ -101,7 +248,7 @@
           <div class="awesome-section__advisement-list__content-block">
             <img
               class="awesome-section__advisement-list__content-block__img"
-              src="images/keybord_icon.png"
+              src="images/awesome/keybord_icon.png"
               alt="keybord icon"
             />
             <h4 class="awesome-section__advisement-list__content-block__header">
@@ -116,7 +263,7 @@
           <div class="awesome-section__advisement-list__content-block">
             <img
               class="awesome-section__advisement-list__content-block__img"
-              src="images/splash_icon.png"
+              src="images/awesome/splash_icon.png"
               alt="splash icon"
             />
             <h4 class="awesome-section__advisement-list__content-block__header">
@@ -145,25 +292,25 @@
               <h4 class="rate-info__tab__price__text">$10</h4>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__type">
-              <h4 class="rate-info__tab__type__text">Free for life</h4>
+              <h5 class="rate-info__tab__type__text">Free for life</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
           </div>
           <div class="pricing-section__rate-info rate-info__active">
@@ -174,25 +321,25 @@
               <h4 class="rate-info__tab__price__text">$20</h4>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__type">
-              <h4 class="rate-info__tab__type__text">Free for life</h4>
+              <h5 class="rate-info__tab__type__text">Free for life</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
           </div>
           <div class="pricing-section__rate-info">
@@ -203,25 +350,25 @@
               <h4 class="rate-info__tab__price__text">$30</h4>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__type">
-              <h4 class="rate-info__tab__type__text">Free for life</h4>
+              <h5 class="rate-info__tab__type__text">Free for life</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
             <div class="pricing-section__rate-info__tab rate-info__tab__params">
-              <h4 class="rate-info__tab__params__text">1 gb of space</h4>
+              <h5 class="rate-info__tab__params__text">1 gb of space</h5>
             </div>
           </div>
         </div>
@@ -297,6 +444,118 @@
           </div>
         </div>
       </section>
+      <section class="stylish-section">
+        <div class="stylish-section__download-box">
+          <h2 class="stylish-section__header">STYLISH AXURE DESIGN</h2>
+          <div class="stylish-section__bottom-border"></div>
+          <h5 class="stylish-section__before-scriptum">
+            Use the sections you need, remove the ones you don't. Create
+            gorgeous prototypes faster than ever!
+          </h5>
+          <button
+            class="button-1 button-text stylish-section__button-1"
+            type="button"
+          >
+            Download
+          </button>
+        </div>
+      </section>
+      <section class="contacts-section">
+        <h2 class="contacts-section__header">contact us</h2>
+        <div class="contacts-section__bottom-border"></div>
+        <h5 class="contacts-section__before-scriptum">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </h5>
+        <form class="contacts-section__form" action="" method="post">
+          <div class="contacts-section__fields">
+            <div class="contacts-section__private-info">
+              <input
+                type="text"
+                class="input-1 contacts-section__input-1"
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                class="input-1 contacts-section__input-1"
+                placeholder="Email"
+              />
+              <input
+                type="password"
+                class="input-1 contacts-section__input-1"
+                placeholder="Password"
+              />
+            </div>
+            <div class="contacts-section__message">
+              <textarea
+                class="contacts-section__textarea"
+                name="sended-message"
+                id="sended-message"
+                placeholder="Message"
+              ></textarea>
+            </div>
+          </div>
+          <button
+            class="button-3 button-text contacts-section__button-3"
+            type="button"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
     </main>
+    <footer class="footer-body">
+      <nav class="footer-body__social-media-block">
+        <a href="" class="footer-body__social-media-link">
+          <img
+            src="images/social-media/facebook_img.svg"
+            alt="facebook"
+            class="footer-body__link-img"
+          />
+        </a>
+        <a href="" class="footer-body__social-media-link">
+          <img
+            src="images/social-media/twitter_img.svg"
+            alt="twitter"
+            class="footer-body__link-img"
+          />
+        </a>
+        <a href="" class="footer-body__social-media-link">
+          <img
+            src="images/social-media/linkedin_img.svg"
+            alt="linkedin"
+            class="footer-body__link-img"
+          />
+        </a>
+        <a href="" class="footer-body__social-media-link">
+          <img
+            src="images/social-media/printers_img.svg"
+            alt="printers"
+            class="footer-body__link-img"
+          />
+        </a>
+        <a href="" class="footer-body__social-media-link">
+          <img
+            src="images/social-media/instagram_img.svg"
+            alt="instagram"
+            class="footer-body__link-img"
+          />
+        </a>
+        <a href="" class="footer-body__social-media-link">
+          <img
+            src="images/social-media/github_img.svg"
+            alt="github"
+            class="footer-body__link-img"
+          />
+        </a>
+        <a href="" class="footer-body__social-media-link">
+          <img
+            src="images/social-media/rss_img.svg"
+            alt="rss"
+            class="footer-body__link-img"
+          />
+        </a>
+      </nav>
+      <h5 class="water-mark">© 2015 Axure Themes</h5>
+    </footer>
   </body>
 </html>

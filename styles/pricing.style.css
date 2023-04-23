@@ -11,15 +11,6 @@
 .pricing-section__header {
   height: 150px;
   margin: 50px 0 0 0;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 42px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .pricing-section__bottom-border {
@@ -32,14 +23,6 @@
 
 .pricing-section__before-scriptum {
   margin: 0;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
 
   color: #86878b;
 }
@@ -69,21 +52,13 @@
 }
 
 .rate-info__tab__name {
+  
   height: 60px;
   background: #333333;
 }
 
 .rate-info__tab__name__text {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: capitalize;
-
+  text-transform: none;
   color: #ffffff;
 }
 
@@ -95,15 +70,6 @@
 }
 
 .rate-info__tab__price__text {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   color: #ffffff;
 }
 
@@ -114,15 +80,6 @@
 }
 
 .rate-info__tab__type__text {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -133,14 +90,6 @@
 }
 
 .rate-info__tab__params__text {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   text-transform: capitalize;
 
   color: #86878b;

@@ -1,0 +1,28 @@
+.navigation-text {
+  cursor: pointer;
+  font-family: "Open Sans";
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  width: 134px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+}
+
+.navigation:hover {
+  background: #ec7979;
+}
+
+.navigation:active {
+  background: #ab4949;
+}

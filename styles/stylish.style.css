@@ -1,0 +1,56 @@
+.stylish-section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("../images/stylish/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stylish-section::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.stylish-section__download-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  width: 1170px;
+  z-index: 1;
+}
+
+.stylish-section__header {
+  justify-items: center;
+  justify-content: center;
+  height: 150px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.stylish-section__bottom-border {
+  height: 0px;
+  width: 170px;
+
+  border-top: 1px solid #ffffff;
+  margin: 0 0 40px 0;
+}
+
+.stylish-section__before-scriptum {
+  margin: 0;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.stylish-section__button-1 {
+  margin-top: 73px;
+  width: 370px;
+}
