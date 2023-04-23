@@ -92,9 +92,7 @@
 }
 
 .customers-section__comment_author-img-text {
-  position: absolute;
   display: flex;
-  flex-direction: row;
 }
 
 .customers-section__comment_author-img {
