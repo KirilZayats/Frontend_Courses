@@ -14,7 +14,7 @@
   color: #ffffff;
 }
 
-.button-1 {
+.transparent-button {
   height: 58px;
 
   text-transform: capitalize;
@@ -22,18 +22,18 @@
   border: 2px solid #ffffff;
 }
 
-.button-1:hover {
+.transparent-button:hover {
   color: #ec7979;
   border: 2px solid #ec7979;
 }
 
-.button-1:active {
+.transparent-button:active {
   color: white;
   background: #ab4949;
   border: 2px solid #ab4949;
 }
 
-.button-2 {
+.box-end-button {
   border: none;
   height: 60px;
   width: 100%;
@@ -42,30 +42,30 @@
   border-radius: 0px 0px 10px 10px;
 }
 
-.button-2:hover {
+.box-end-button:hover {
   background: #ab4949;
   border-radius: 0px 0px 10px 10px;
 }
 
-.button-2:active {
+.box-end-button:active {
   background: #ec7979;
   border-radius: 0px 0px 10px 10px;
   box-shadow: inset 0px 0px 10px #ab4949;
 }
 
-.button-3 {
+.button-with-filling {
   height: 58px;
   border: none;
   background: #ec7979;
   text-transform: capitalize;
 }
 
-.button-3:hover {
+.button-with-filling:hover {
   background: #ab4949;
   box-shadow: 0px 0px 13px 0px rgba(186, 91, 91, 0.64) inset;
 }
 
-.button-3:active {
+.button-with-filling:active {
   background: #ec7979;
   box-shadow: inset 0px 0px 10px #ab4949;
 }

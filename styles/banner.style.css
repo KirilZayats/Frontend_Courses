@@ -18,7 +18,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.banner-section__main-div {
+.banner-section__main-box {
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -97,15 +97,15 @@
   white-space: pre;
 }
 
-.banner-section__button-2 {
+.banner-section__box-end-button {
   margin-top: 75px;
 }
 
-.banner-section_input-1 {
+.banner-section_input-in-contact {
   margin-top: 33px;
 }
 
-.banner-section__button-1 {
+.banner-section__transparent-button {
   margin-top: 42px;
   width: 270px;
 }

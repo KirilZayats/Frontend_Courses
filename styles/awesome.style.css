@@ -56,7 +56,7 @@
 .awesome-section__advisement-list__content-block__header {
   width: 100%;
   justify-content: center;
-
+  text-transform: none;
   cursor: default;
 }
 
