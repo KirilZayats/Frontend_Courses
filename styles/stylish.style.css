@@ -54,3 +54,29 @@
   margin-top: 73px;
   width: 370px;
 }
+
+@media screen and (max-width: 1200px) {
+  .stylish-section__download-box {
+    width: 100%;
+  }
+
+  .stylish-section__header {
+    height: 120px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .stylish-section__bottom-border {
+    width: 143px;
+  }
+
+  .stylish-section__before-scriptum {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .stylish-section__transparent-button {
+    margin-top: 32px;
+    width: 318px;
+  }
+}

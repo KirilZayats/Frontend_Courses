@@ -25,7 +25,7 @@
 
 .awesome-section__before-scriptum {
   height: 21px;
-  width: 1169px;
+  width: 100%;
   margin: 0;
   justify-content: center;
 
@@ -64,4 +64,43 @@
   margin: 8px 15px 0px 15px;
   text-align: center;
   cursor: default;
+}
+
+@media screen and (max-width: 1200px) {
+  .awesome-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .awesome-section__header {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .awesome-section__bottom-border {
+    width: 142px;
+  }
+
+  .awesome-section__before-scriptum {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .awesome-section__advisement-list__content-block {
+    margin-top: 45px;
+  }
+
+  .awesome-section__advisement-list__content-block__img {
+    width: 158px;
+    height: 158px;
+  }
+
+  .awesome-section__advisement-list__content-block__header {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .awesome-section__advisement-list__content-block__data {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }

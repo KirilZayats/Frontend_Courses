@@ -114,3 +114,40 @@
   top: 65px;
   left: 100px;
 }
+
+@media screen and (max-width: 1200px) {
+  .customers-section__comments-block {
+    justify-content: center;
+    padding-top: 32px;
+    gap: 2%;
+  }
+
+  .customers-section__comment {
+    position: relative;
+    width: 317px;
+  }
+  .customers-section__comment__comment-text::before {
+    width: 317px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .customers-section {
+    width: 100%;
+  }
+
+  .customers-section__header {
+    height: 120px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .customers-section__bottom-border {
+    width: 143px;
+  }
+
+  .customers-section__before-scriptum {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

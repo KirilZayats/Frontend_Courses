@@ -38,3 +38,30 @@
 .media-section__link-img {
   transform: scale(1.29);
 }
+
+@media screen and (max-width: 1200px) {
+  .media-section__info-block  {
+    width: 100%;
+  }
+
+  .media-section__links {
+    margin-right: 30px;
+  }
+  .media-section__link-img {
+    transform: scale(1.186);
+  }
+
+  .media-section__text-header {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .media-section__text-main {
+    width: auto;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .media-section__info-block {
+    margin: 0 16px;
+  }
+}
