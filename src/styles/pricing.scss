@@ -1,3 +1,5 @@
+$pricing-box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
+
 .pricing-section {
   display: flex;
   flex-direction: column;
@@ -11,20 +13,28 @@
 .pricing-section__header {
   height: 150px;
   margin: 50px 0 0 0;
+  @media screen and (max-width: $tablets-max-width) {
+    height: 120px;
+  }
 }
 
-.pricing-section__bottom-border {
-  height: 0px;
-  width: 170px;
-
-  border-top: 1px solid #ec7979;
+.pricing-section__underline {
+  border-top: 1px solid $main-color !important;
   margin: 0 0 40px 0;
+
+  @media screen and (max-width: $tablets-max-width) {
+    margin: 0 0 32px 0;
+  }
 }
 
 .pricing-section__before-scriptum {
   margin: 0;
 
   color: #86878b;
+
+  @media screen and (max-width: $tablets-min-width) {
+    text-align: center;
+  }
 }
 
 .pricing-section__rate-info {
@@ -33,6 +43,19 @@
 
   margin-top: 79px;
   width: 370px;
+ 
+  @media screen and (max-width: $tablets-max-width) {
+    margin-top: 49px;
+    width: 317px;
+  }
+  
+  @media screen and (max-width: $tablets-average-width) {
+    width: 370px;
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    width: 288px !important;
+  }
 }
 
 .pricing-section__rates {
@@ -40,7 +63,18 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 50px;
-  width: 1170px;
+  width: $content-box-width;
+
+  @media screen and (max-width: $tablets-max-width) {
+    width: 100%;
+    justify-content: center;
+    gap: 2%;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .pricing-section__rate-info__tab {
@@ -98,48 +132,31 @@
   box-sizing: border-box;
   margin-top: 50px;
   height: 510px;
-  box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
+  box-shadow: $pricing-box-shadow;
+  @media screen and (max-width: $tablets-max-width) {
+    margin-top: 20px;
+    height: 480px;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    margin-top: 49px;
+    height: auto;
+  }
 }
 
 .pricing-section__rates:not(:hover) .rate-info__active {
   box-sizing: border-box;
   margin-top: 50px;
   height: 510px;
-  box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
-}
+  box-shadow: $pricing-box-shadow;
 
-@media screen and (max-width: 1200px) {
-  .pricing-section__rate-info {
-    margin-top: 49px;
-    width: 317px;
-  }
-
-  .pricing-section__rate-info:hover {
-    box-sizing: border-box;
+  @media screen and (max-width: $tablets-max-width) {
     margin-top: 20px;
     height: 480px;
-    box-shadow: -1px 19px 50px -15px rgba(34, 60, 80, 0.61);
   }
 
-  .pricing-section__rates {
-    width: 100%;
-    justify-content: center;
-    gap: 2%;
-  }
-  .pricing-section__header {
-    height: 120px;
-
-
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .pricing-section__bottom-border {
-    width: 143px;
-    margin: 0 0 32px 0;
-  }
-
-  .pricing-section__before-scriptum {
-    font-size: 14px;
-    line-height: 16px;
+  @media screen and (max-width: $tablets-average-width) {
+    margin-top: 49px;
+    height: auto;
   }
 }

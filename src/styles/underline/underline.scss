@@ -1,0 +1,11 @@
+.underline {
+  height: 0px;
+  width: 170px;
+  border-top: 1px solid #ffffff;
+  @media screen and (max-width: $tablets-max-width) {
+    width: 143px;
+  }
+  @media screen and (max-width: $tablets-min-width) {
+    width: 134px;
+  }
+}

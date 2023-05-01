@@ -1,0 +1,112 @@
+.media-section {
+  width: 100%;
+  background-color: #f8efef;
+  @media screen and (max-width: $tablets-average-width) {
+    box-sizing: border-box;
+    padding-inline: 20px;
+  }
+}
+
+.media-section__info-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: $content-box-width;
+  margin: 0 auto;
+  @media screen and (max-width: $tablets-max-width) {
+    width: 100%;
+    margin: 0 16px;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    box-sizing: border-box;
+    width: 271px;
+  }
+}
+
+.media-section__text-header {
+  margin: 0;
+  height: 60px;
+  width: 470px;
+  text-transform: none;
+  color: #333333;
+  @media screen and (max-width: $tablets-average-width) {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: $tablets-min-width) {
+    width: fit-content;
+  }
+}
+
+.media-section__text-main {
+  width: 470px;
+  margin-top: 18px;
+
+  color: #86878b;
+
+  @media screen and (max-width: $tablets-max-width) {
+    width: auto;
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    width: fit-content;
+    height: 48px;
+  }
+}
+
+.media-section__links {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 49.84px;
+
+  @media screen and (max-width: $tablets-max-width) {
+    margin-right: 30px;
+  }
+  @media screen and (max-width: $tablets-average-width) {
+    margin-bottom: 46px;
+  }
+  @media screen and (max-width: $tablets-min-width) {
+    width: fit-content;
+    margin-inline: 0;
+  }
+}
+
+.media-section__link-img {
+  transform: scale(1.29);
+
+  @media screen and (max-width: $tablets-max-width) {
+    transform: scale(1.186);
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    transform: scale(1);
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    transform: scale(0.6);
+  }
+}
+
+.awesome-section__text {
+  @media screen and (max-width: $tablets-min-width) {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-inline: 50px;
+  }
+}

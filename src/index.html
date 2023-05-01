@@ -3,23 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/common.style.css" />
-    <link rel="stylesheet" href="styles/header.style.css" />
-    <link rel="stylesheet" href="styles/body.style.css" />
-    <link rel="stylesheet" href="styles/media.style.css" />
-    <link rel="stylesheet" href="styles/awesome.style.css" />
-    <link rel="stylesheet" href="styles/tabs.style.css" />
-    <link rel="stylesheet" href="styles/pricing.style.css" />
-    <link rel="stylesheet" href="styles/customers.style.css" />
-    <link rel="stylesheet" href="styles/stylish.style.css" />
-    <link rel="stylesheet" href="styles/contacts.style.css" />
-    <link rel="stylesheet" href="styles/footer.style.css" />
-    <link rel="stylesheet" href="styles/banner.style.css" />
-    <link rel="stylesheet" href="styles/buttons/buttons.style.css" />
-    <link rel="stylesheet" href="styles/input/input.style.css" />
-    <link rel="stylesheet" href="styles/navigation/navigation.style.css" />
+    <link rel="stylesheet" href="styles/styles.scss" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
     <link
@@ -41,58 +31,26 @@
       <div class="header-body__label">
         <img
           class="header-body__ax-latters"
-          src="images/label/axit-1_img.png"
+          src="imgs/label/axit-1_img.png"
           alt="AX"
         />
         <img
           class="header-body__it-latters"
-          src="images/label/axit-2_img.png"
+          src="imgs/label/axit-2_img.png"
           alt="IT"
         />
       </div>
       <nav class="header-body__nav">
-        <button class="navigation navigation-text">Features</button>
-        <button class="navigation navigation-text">About</button>
-        <button class="navigation navigation-text">Pricing</button>
-        <button class="navigation navigation-text">Reviews</button>
-        <button class="navigation navigation-text">Contact</button>
-        <div class="bar-box">
-          <button class="menu-button">
-            <img src="images/header/menu_img.svg" alt="menu" />
-          </button>
-          <div class="invisible-nav-bar">
-            <div class="menu-header">
-              <div class="header-body__label">
-                <img
-                  class="header-body__ax-latters"
-                  src="images/label/axit-1_img.png"
-                  alt="AX"
-                />
-                <img
-                  class="header-body__it-latters"
-                  src="images/label/axit-2_img.png"
-                  alt="IT"
-                />
-              </div>
-              <img src="images/header/close_img.svg" alt="close menu icon" class="close_icon">
-            </div>
-            <button class="navigation-menu">
-              <h6>Features</h6>
-            </button>
-            <button class="navigation-menu">
-              <h6>About</h6>
-            </button>
-            <button class="navigation-menu">
-              <h6>Pricing</h6>
-            </button>
-            <button class="navigation-menu">
-              <h6>Reviews</h6>
-            </button>
-            <button class="navigation-menu">
-              <h6>Contact</h6>
-            </button>
-          </div>
-        </div>
+        <input type="checkbox" name="toggle" id="menu" class="toggle-menu" />
+        <label for="menu" class="toggle-menu-label"
+          ><img src="imgs/header/menu-label_img.png" alt="label AXIT" />
+          <div></div>
+        </label>
+        <button class="navigation">Features</button>
+        <button class="navigation">About</button>
+        <button class="navigation">Pricing</button>
+        <button class="navigation">Reviews</button>
+        <button class="navigation">Contact</button>
       </nav>
     </header>
     <main class="main-body">
@@ -102,20 +60,26 @@
             <div class="banner-section__logo-with-header">
               <img
                 class="banner-section__logo"
-                src="images/banner/logo.svg"
+                src="imgs/banner/logo.svg"
                 alt="logo AXIT"
               />
               <h1 class="banner-section__header">
                 MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES
               </h1>
-              <div class="banner-section__bottom-border"></div>
+              <div class="underline banner-section__underline"></div>
               <h5 class="banner-section__before-scriptum">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </h5>
+              <button
+                class="transparent-button banner-section__transparent-button"
+                type="button"
+              >
+                Download
+              </button>
             </div>
             <form action="" class="banner-section__form">
               <h4 class="banner-section__form-header">
-                Try Your <span class="banner-section__form-header form-header_color_red"> FREE </span> Trial Today
+                Try Your <span> FREE </span> Trial Today
               </h4>
               <div class="banner-section__inputs-block">
                 <input
@@ -135,19 +99,13 @@
                 />
               </div>
               <button
-                class="box-end-button button-text banner-section__box-end-button"
+                class="box-end-button banner-section__box-end-button"
                 type="submit"
               >
                 Get Started
               </button>
             </form>
           </div>
-          <button
-            class="transparent-button button-text banner-section__transparent-button"
-            type="button"
-          >
-            Download
-          </button>
         </div>
       </section>
       <section class="media-section">
@@ -162,49 +120,49 @@
           <nav class="media-section__links">
             <a href="" class="media-section__link">
               <img
-                src="images/social-media/facebook_img.svg"
+                src="imgs/social-media/facebook_img.svg"
                 alt="facebook"
                 class="media-section__link-img"
               />
             </a>
             <a href="" class="media-section__link">
               <img
-                src="images/social-media/twitter_img.svg"
+                src="imgs/social-media/twitter_img.svg"
                 alt="twitter"
                 class="media-section__link-img"
               />
             </a>
             <a href="" class="media-section__link">
               <img
-                src="images/social-media/linkedin_img.svg"
+                src="imgs/social-media/linkedin_img.svg"
                 alt="linkedin"
                 class="media-section__link-img"
               />
             </a>
             <a href="" class="media-section__link">
               <img
-                src="images/social-media/printers_img.svg"
+                src="imgs/social-media/printers_img.svg"
                 alt="printers"
                 class="media-section__link-img"
               />
             </a>
             <a href="" class="media-section__link">
               <img
-                src="images/social-media/instagram_img.svg"
+                src="imgs/social-media/instagram_img.svg"
                 alt="instagram"
                 class="media-section__link-img"
               />
             </a>
             <a href="" class="media-section__link">
               <img
-                src="images/social-media/github_img.svg"
+                src="imgs/social-media/github_img.svg"
                 alt="github"
                 class="media-section__link-img"
               />
             </a>
             <a href="" class="media-section__link">
               <img
-                src="images/social-media/rss_img.svg"
+                src="imgs/social-media/rss_img.svg"
                 alt="rss"
                 class="media-section__link-img"
               />
@@ -251,7 +209,7 @@
               Aenean euismod bibendum laoreet.
             </h5>
             <button
-              class="button-with-filling button-text tabs-section__button-with-filling"
+              class="button-with-filling tabs-section__button-with-filling"
               type="button"
             >
               Download
@@ -259,14 +217,14 @@
           </div>
           <img
             class="tabs-section__tab-content__img"
-            src="images/tabs/tab_img.png"
+            src="imgs/tabs/tab_img.png"
             alt="statue of liberty"
           />
         </div>
       </section>
       <section class="awesome-section">
         <h2 class="awesome-section__header">WHY THIS IS AWESOME</h2>
-        <div class="awesome-section__bottom-border"></div>
+        <div class="underline awesome-section__underline"></div>
         <h5 class="awesome-section__before-scriptum">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h5>
@@ -274,7 +232,7 @@
           <div class="awesome-section__advisement-list__content-block">
             <img
               class="awesome-section__advisement-list__content-block__img"
-              src="images/awesome/idea_icon.png"
+              src="imgs/awesome/idea_icon.png"
               alt="idea icon"
             />
             <h4 class="awesome-section__advisement-list__content-block__header">
@@ -289,7 +247,7 @@
           <div class="awesome-section__advisement-list__content-block">
             <img
               class="awesome-section__advisement-list__content-block__img"
-              src="images/awesome/keybord_icon.png"
+              src="imgs/awesome/keybord_icon.png"
               alt="keybord icon"
             />
             <h4 class="awesome-section__advisement-list__content-block__header">
@@ -304,7 +262,7 @@
           <div class="awesome-section__advisement-list__content-block">
             <img
               class="awesome-section__advisement-list__content-block__img"
-              src="images/awesome/splash_icon.png"
+              src="imgs/awesome/splash_icon.png"
               alt="splash icon"
             />
             <h4 class="awesome-section__advisement-list__content-block__header">
@@ -320,7 +278,7 @@
       </section>
       <section class="pricing-section">
         <h2 class="pricing-section__header">pricing options</h2>
-        <div class="pricing-section__bottom-border"></div>
+        <div class="underline pricing-section__underline"></div>
         <h5 class="pricing-section__before-scriptum">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h5>
@@ -416,7 +374,7 @@
       </section>
       <section class="customers-section">
         <h2 class="customers-section__header">what our customers are saying</h2>
-        <div class="customers-section__bottom-border"></div>
+        <div class="underline customers-section__underline"></div>
         <h5 class="customers-section__before-scriptum">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h5>
@@ -429,7 +387,7 @@
             <div class="customers-section__comment__comment-author">
               <div class="customers-section__comment_author-img-text">
                 <img
-                  src="images/customers/Davis_avatar_img.png"
+                  src="imgs/customers/Davis_avatar_img.png"
                   alt="Davis avatar"
                   class="customers-section__comment_author-img"
                 />
@@ -448,7 +406,7 @@
             <div class="customers-section__comment__comment-author">
               <div class="customers-section__comment_author-img-text">
                 <img
-                  src="images/customers/Jaydon_avatar_img.png"
+                  src="imgs/customers/Jaydon_avatar_img.png"
                   alt="Jaydon avatar"
                   class="customers-section__comment_author-img"
                 />
@@ -467,7 +425,7 @@
             <div class="customers-section__comment__comment-author">
               <div class="customers-section__comment_author-img-text">
                 <img
-                  src="images/customers/Cooper_avatar_img.png"
+                  src="imgs/customers/Cooper_avatar_img.png"
                   alt="Cooper avatar"
                   class="customers-section__comment_author-img"
                 />
@@ -483,13 +441,13 @@
       <section class="stylish-section">
         <div class="stylish-section__download-box">
           <h2 class="stylish-section__header">STYLISH AXURE DESIGN</h2>
-          <div class="stylish-section__bottom-border"></div>
+          <div class="underline stylish-section__underline"></div>
           <h5 class="stylish-section__before-scriptum">
             Use the sections you need, remove the ones you don't. Create
             gorgeous prototypes faster than ever!
           </h5>
           <button
-            class="transparent-button button-text stylish-section__transparent-button"
+            class="transparent-button stylish-section__transparent-button"
             type="button"
           >
             Download
@@ -498,7 +456,7 @@
       </section>
       <section class="contacts-section">
         <h2 class="contacts-section__header">contact us</h2>
-        <div class="contacts-section__bottom-border"></div>
+        <div class="underline contacts-section__underline"></div>
         <h5 class="contacts-section__before-scriptum">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h5>
@@ -531,7 +489,7 @@
             </div>
           </div>
           <button
-            class="button-with-filling button-text contacts-section__button-with-filling"
+            class="button-with-filling contacts-section__button-with-filling"
             type="submit"
           >
             Send Message
@@ -543,49 +501,49 @@
       <nav class="footer-body__social-media-block">
         <a href="" class="footer-body__social-media-link">
           <img
-            src="images/social-media/facebook_img.svg"
+            src="imgs/social-media/facebook_img.svg"
             alt="facebook"
             class="footer-body__link-img"
           />
         </a>
         <a href="" class="footer-body__social-media-link">
           <img
-            src="images/social-media/twitter_img.svg"
+            src="imgs/social-media/twitter_img.svg"
             alt="twitter"
             class="footer-body__link-img"
           />
         </a>
         <a href="" class="footer-body__social-media-link">
           <img
-            src="images/social-media/linkedin_img.svg"
+            src="imgs/social-media/linkedin_img.svg"
             alt="linkedin"
             class="footer-body__link-img"
           />
         </a>
         <a href="" class="footer-body__social-media-link">
           <img
-            src="images/social-media/printers_img.svg"
+            src="imgs/social-media/printers_img.svg"
             alt="printers"
             class="footer-body__link-img"
           />
         </a>
         <a href="" class="footer-body__social-media-link">
           <img
-            src="images/social-media/instagram_img.svg"
+            src="imgs/social-media/instagram_img.svg"
             alt="instagram"
             class="footer-body__link-img"
           />
         </a>
         <a href="" class="footer-body__social-media-link">
           <img
-            src="images/social-media/github_img.svg"
+            src="imgs/social-media/github_img.svg"
             alt="github"
             class="footer-body__link-img"
           />
         </a>
         <a href="" class="footer-body__social-media-link">
           <img
-            src="images/social-media/rss_img.svg"
+            src="imgs/social-media/rss_img.svg"
             alt="rss"
             class="footer-body__link-img"
           />

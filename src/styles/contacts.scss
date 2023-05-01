@@ -4,22 +4,32 @@
   align-items: center;
   margin: 0 auto;
   padding: 50px 0;
-  width: 1170px;
+  width: $content-box-width;
+  @media screen and (max-width: $tablets-max-width) {
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 16px;
+  }
 }
 
 .contacts-section__header {
   height: 150px;
   justify-content: center;
   margin: 0;
+  @media screen and (max-width: $tablets-max-width) {
+    height: 120px;
+    font-weight: 700;
+  }
 }
 
-.contacts-section__bottom-border {
-  height: 0px;
-  width: 170px;
-
-  border-top: 1px solid #ec7979;
-  margin: 0 0 40px 0;
+.contacts-section__underline {
+  border-top: 1px solid $main-color !important;
+  margin: 0 0 42px 0;
+  @media screen and (max-width: $tablets-max-width) {
+    margin: 0 0 32px 0;
+  }
 }
+
 .contacts-section__before-scriptum {
   margin: 0;
   text-align: center;
@@ -37,6 +47,11 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
+
+  @media screen and (max-width: $tablets-average-width) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contacts-section__private-info {
@@ -44,6 +59,9 @@
   display: flex;
   flex-direction: column;
   margin-top: 39px;
+  @media screen and (max-width:$tablets-min-width) {
+    width: 100%;
+  }
 }
 
 .contacts-section__input-in-contact {
@@ -54,6 +72,15 @@
   display: flex;
   margin-top: 89px;
   width: 50%;
+
+  @media screen and (max-width: $tablets-average-width) {
+    height: 250px;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width:$tablets-min-width) {
+    width: 100%;
+  }
 }
 
 .contacts-section__textarea {
@@ -75,33 +102,10 @@
 .contacts-section__button-with-filling {
   margin-top: 50px;
   width: 370px;
-}
-
-@media screen and (max-width: 1200px) {
-  .contacts-section {
-    width: 100%;
-    box-sizing: border-box;
-    padding-inline: 16px;
-  }
-
-  .contacts-section__header {
-    height: 120px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .contacts-section__bottom-border {
-    width: 143px;
-    margin: 0 0 32px 0;
-  }
-
-  .contacts-section__before-scriptum {
-    font-size: 14px;
-    line-height: 16px;
-  }
-
-  .contacts-section__button-with-filling {
+  @media screen and (max-width: $tablets-max-width) {
     width: 318px;
+  }
+  @media screen and (max-width: $tablets-average-width) {
+    width: 288px;
   }
 }

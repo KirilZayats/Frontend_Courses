@@ -1,0 +1,108 @@
+@import "mixins";
+@import "variables";
+@import "banner";
+@import "awesome";
+@import "contacts";
+@import "customers";
+@import "footer";
+@import "stylish";
+@import "tabs";
+@import "media";
+@import "pricing";
+@import "header";
+@import "navigation/navigation";
+@import "input/input";
+@import "buttons/buttons";
+@import "underline/underline";
+
+body {
+  margin: 0;
+}
+
+.main-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  @include realway-style();
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  @media screen and (max-width: $tablets-max-width) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+h2 {
+  @include realway-style();
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  @media screen and (max-width: $tablets-max-width) {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  @media screen and (max-width: $tablets-min-width) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+h3 {
+  @include open-sans-style();
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  @media screen and (max-width: $tablets-max-width) {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  @media screen and (max-width: $tablets-max-width) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+h4 {
+  @include open-sans-style();
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  @media screen and (max-width: $tablets-max-width) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @media screen and (max-width: $tablets-min-width) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+h5 {
+  @include realway-style();
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  @media screen and (max-width: $tablets-max-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  @media screen and (max-width: $tablets-min-width) {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+h6 {
+  @include open-sans-style();
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+}

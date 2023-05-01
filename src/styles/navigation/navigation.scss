@@ -1,0 +1,60 @@
+@mixin navigation-text {
+  cursor: pointer;
+  font-family: "Open Sans";
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  width: 134px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+  @include navigation-text();
+  @media screen and (max-width: $tablets-average-width) {
+    display: none;
+    background-color: black;
+    position: relative;
+    top: 180px;
+    height: 67px;
+    width: 320px;
+    transform: translateX(10%);
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    display: none;
+    background-color: black;
+    position: relative;
+    top: 180px;
+    height: 67px;
+    width: 320px;
+    transform: translateX(60%);
+  }
+
+  @include media-for-menu();
+}
+.navigation:last-child::after {
+  @media screen and (max-width: $tablets-average-width) {
+    position: absolute;
+    content: " ";
+    height: 180px;
+    width: 320px;
+    top: 67px;
+    transform: translateX(-58.3%);
+    background-color: black;
+  }
+}
+.navigation:hover {
+  background: $main-color;
+}
+
+.navigation:active {
+  background: $active-color;
+}

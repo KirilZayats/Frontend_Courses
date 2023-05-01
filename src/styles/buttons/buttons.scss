@@ -1,11 +1,8 @@
-.button-text {
-  font-family: "Open Sans";
-  font-style: normal;
+@mixin button-text {
+  @include open-sans-style();
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  display: flex;
-  align-items: center;
 
   cursor: pointer;
 
@@ -15,6 +12,7 @@
 }
 
 .transparent-button {
+  @include button-text();
   height: 58px;
 
   text-transform: capitalize;
@@ -23,49 +21,51 @@
 }
 
 .transparent-button:hover {
-  color: #ec7979;
-  border: 2px solid #ec7979;
+  color: $main-color;
+  border: 2px solid $main-color;
 }
 
 .transparent-button:active {
   color: white;
-  background: #ab4949;
-  border: 2px solid #ab4949;
+  background: $active-color;
+  border: 2px solid $active-color;
 }
 
 .box-end-button {
+  @include button-text();
   border: none;
   height: 60px;
   width: 100%;
   padding: 0;
-  background: #ec7979;
+  background: $main-color;
   border-radius: 0px 0px 10px 10px;
 }
 
 .box-end-button:hover {
-  background: #ab4949;
+  background: $active-color;
   border-radius: 0px 0px 10px 10px;
 }
 
 .box-end-button:active {
-  background: #ec7979;
+  background: $main-color;
   border-radius: 0px 0px 10px 10px;
-  box-shadow: inset 0px 0px 10px #ab4949;
+  box-shadow: inset 0px 0px 10px $active-color;
 }
 
 .button-with-filling {
+  @include button-text();
   height: 58px;
   border: none;
-  background: #ec7979;
+  background: $main-color;
   text-transform: capitalize;
 }
 
 .button-with-filling:hover {
-  background: #ab4949;
+  background: $active-color;
   box-shadow: 0px 0px 13px 0px rgba(186, 91, 91, 0.64) inset;
 }
 
 .button-with-filling:active {
-  background: #ec7979;
-  box-shadow: inset 0px 0px 10px #ab4949;
+  background: $main-color;
+  box-shadow: inset 0px 0px 10px $active-color;
 }

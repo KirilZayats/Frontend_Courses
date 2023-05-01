@@ -1,0 +1,209 @@
+.banner-section {
+  background: url("../imgs/banner/bg.jpg");
+  @include background-style();
+
+  @media screen and (max-width: $tablets-max-width) {
+    margin-right: 10%;
+  }
+}
+
+.banner-section::after {
+  @include transparently-style();
+}
+
+.banner-section__main-box {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: $content-box-width;
+  margin-top: 231px;
+  margin-bottom: 185px;
+  @media screen and (max-width: $tablets-max-width) {
+    width: 992px;
+    margin-top: 154.2px;
+    margin-bottom: 131.89px;
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    margin-top: 104.2px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: fit-content !important;
+    box-sizing: border-box;
+    padding-inline: 10px;
+    margin-right: 0;
+  }
+}
+
+.banner-section__info-with-form-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  @media screen and (max-width: $tablets-max-width) {
+    justify-content: end;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.banner-section__logo-with-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+
+  @media screen and (max-width: $tablets-average-width) {
+    align-items: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: fit-content !important;
+    box-sizing: border-box;
+    padding-inline: 10px;
+  }
+}
+
+.banner-section__header {
+  width: 670px;
+  color: #ffffff;
+  margin: 72.88px 0 55.12px 0;
+  @media screen and (max-width: $tablets-max-width) {
+    width: 454.36px;
+    margin: 49.08px 0 41.49px 0;
+  }
+  @media screen and (max-width: $tablets-average-width) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: fit-content !important;
+    box-sizing: border-box;
+    padding-inline: 10px;
+  }
+}
+
+.banner-section__underline {
+  margin-bottom: 42px;
+  @media screen and (max-width: $tablets-max-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.banner-section__before-scriptum {
+  width: 270px;
+  margin: 0;
+  color: #ffffff;
+
+  @media screen and (max-width: $tablets-max-width) {
+    width: 183.1px;
+  }
+}
+
+.banner-section__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: solid 0px rgba(255, 255, 255, 0);
+  border-top: solid 1px rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  height: fit-content;
+
+  @media screen and (max-width: $tablets-max-width) {
+    margin-left: 36.36px;
+    width: 389px;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    margin: 65px 0 0 0;
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    width: 280px;
+  }
+}
+.banner-section__inputs-block {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-inline: 50px;
+  margin-top: 45px;
+  width: 100%;
+
+  @media screen and (max-width: $tablets-max-width) {
+    margin-top: 15px;
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    margin-top: 0;
+    padding-inline: 20px;
+  }
+}
+
+.banner-section__form-header {
+  height: 90px;
+  margin: 0;
+
+  align-items: center;
+  text-align: center;
+
+  color: #333333;
+  span {
+    color: $main-color;
+    white-space: pre;
+  }
+}
+
+.banner-section__box-end-button {
+  margin-top: 75px;
+
+  @media screen and (max-width: $tablets-max-width) {
+    margin-top: 50px;
+  }
+}
+
+.banner-section_input-in-contact {
+  margin-top: 33px;
+}
+
+.banner-section_input-in-contact:first-child {
+  @media screen and (max-width: $tablets-min-width) {
+    margin-top: 0;
+    height: 35px;
+  }
+}
+
+.banner-section__transparent-button {
+  position: relative;
+  margin-top: 42px;
+  width: 270px;
+
+  @media screen and (max-width: $tablets-max-width) {
+    margin-top: 31.32px;
+    width: 183.1px;
+    height: 50px !important;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    width: 288px;
+  }
+}
+
+.banner-section__logo {
+  @media screen and (max-width: $tablets-max-width) {
+    transform: scale(0.678);
+    margin-left: -42px;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    display: none;
+  }
+}

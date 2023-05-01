@@ -1,0 +1,62 @@
+.stylish-section {
+  background: url("../imgs/stylish/bg.jpg");
+  @include background-style();
+}
+
+.stylish-section::after {
+  @include transparently-style();
+}
+
+.stylish-section__download-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  width: $content-box-width;
+  z-index: 1;
+  @media screen and (max-width: $tablets-max-width) {
+    width: 100%;
+  }
+}
+
+.stylish-section__header {
+  justify-items: center;
+  justify-content: center;
+  height: 150px;
+  margin: 0;
+  color: #ffffff;
+  @media screen and (max-width: $tablets-max-width) {
+    height: 120px;
+  }
+}
+
+.stylish-section__underline {
+  margin: 0 0 40px 0;
+  @media screen and (max-width: $tablets-min-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.stylish-section__before-scriptum {
+  margin: 0;
+  text-align: center;
+
+  color: #ffffff;
+  @media screen and (max-width: $tablets-min-width) {
+    width: 288px;
+  }
+}
+
+.stylish-section__transparent-button {
+  margin-top: 73px;
+  width: 370px;
+  @media screen and (max-width: $tablets-max-width) {
+    margin-top: 32px;
+    width: 318px;
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    margin-top: 66px;
+    width: 287px;
+  }
+}

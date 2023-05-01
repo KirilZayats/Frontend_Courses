@@ -1,0 +1,25 @@
+{
+  "name": "frontend_courses",
+  "version": "1.0.0",
+  "description": "My hw of frontend",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KirilZayats/Frontend_Courses.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KirilZayats/Frontend_Courses/issues"
+  },
+  "homepage": "https://github.com/KirilZayats/Frontend_Courses#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "sass": "^1.62.1"
+  }
+}

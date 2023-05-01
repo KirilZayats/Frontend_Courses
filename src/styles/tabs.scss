@@ -1,0 +1,205 @@
+$active-border-color: 1px solid #c6cbcd;
+
+.tabs-section {
+  width: $content-box-width;
+  margin: 99px auto 0 auto;
+  box-sizing: border-box;
+  @media screen and (max-width: $tablets-max-width) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+}
+
+.tabs-section__tabs-bar {
+  display: flex;
+  height: 40px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.tabs-section__tabs-bar__button {
+  width: 203px;
+  height: 40px;
+
+  cursor: pointer;
+
+  padding: 1px 0px;
+  background-color: white;
+  border: 1px solid white;
+  border-bottom: $active-border-color;
+  @media screen and (max-width: $tablets-max-width) {
+    width: 194px;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    width: fit-content;
+    padding-inline: 57px; 
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    padding-inline: 27px;
+  }
+}
+
+.tabs-section__tabs-bar__button:hover {
+  outline: none;
+  border: $active-border-color;
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.tabs-section__tabs-bar__button__text {
+  @include open-sans-style();
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  cursor: pointer;
+
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.tabs-section__tabs-bar__invisible {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 40px;
+  width: 561px;
+  border-bottom: $active-border-color;
+  @media screen and (max-width: $tablets-max-width) {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 411px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    display: none;
+  }
+}
+
+.tabs-section__tab-content {
+  display: flex;
+  box-sizing: border-box;
+  height: 501px;
+  width: 100%;
+  border: $active-border-color;
+  border-top: none;
+  margin-bottom: 50px;
+  @media screen and (max-width: $tablets-max-width) {
+    height: 385px;
+    margin-right: 16px;
+    width: fit-content;
+    margin: 0;
+  }
+  @media screen and (max-width: $tablets-min-width) {
+    height: 431px !important;
+  }
+}
+
+.tabs-section__tab-content__text-data {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-left: 100px;
+  justify-content: center;
+  align-items: flex-start;
+  @media screen and (max-width: $tablets-max-width) {
+    width: 594px;
+    margin-left: 0;
+    align-items: center;
+    width: fit-content !important;
+    padding-right: 20px;
+    padding-left: 21px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    width: 278px !important;
+  }
+}
+
+.tabs-section__tab-content__header {
+  width: 570px;
+  height: 124px;
+  margin: 0 0 27px 0;
+  @media screen and (max-width: $tablets-max-width) {
+    height: 89px;
+    width: 483px;
+  }
+  @media screen and (max-width: $tablets-average-width) {
+    justify-content: center;
+    width: auto;
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+   text-align: center;
+  }
+}
+
+.tabs-section__tab-content__main-text {
+  flex-direction: column;
+  white-space: pre-line;
+  width: 570px;
+  height: 210px;
+  justify-content: flex-start;
+  align-items: start;
+  margin: 0;
+  margin-bottom: 27px;
+  @media screen and (max-width: $tablets-max-width) {
+    height: 112px;
+    width: 483px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    align-items: center;
+    text-align: center;
+    width: auto;
+  }
+}
+
+.tabs-section__button-with-filling {
+  width: 270px;
+  @media screen and (max-width: $tablets-max-width) {
+    width: 232px;
+
+    align-self: self-start;
+    margin-left: 110px;
+  }
+  @media screen and (max-width: $tablets-average-width) {
+    width: 288px;
+    margin: auto;
+  }
+
+  @media screen and (max-width: $tablets-min-width) {
+    margin: 80px 0 0 0;
+    width: 241px !important;
+  }
+}
+
+.tabs-section__tabs-bar:not(:hover) .tabs-section__tabs-bar__button-active {
+  outline: none;
+  border: $active-border-color;
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.tabs-section__tab-content__img {
+  @media screen and (max-width: $tablets-max-width) {
+    height: 385px;
+    width: 398.2px;
+  }
+
+  @media screen and (max-width: $tablets-average-width) {
+    display: none;
+  }
+}
