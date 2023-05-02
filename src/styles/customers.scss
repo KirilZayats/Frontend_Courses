@@ -65,6 +65,10 @@
     padding-inline: 1%;
     height: 360px;
   }
+
+  @media screen and (max-width: $tablets-average-width) {
+    margin-bottom: 84px;
+  }
 }
 
 .customers-section__comment:not(:nth-child(2)) {
@@ -176,5 +180,16 @@
   @media screen and (max-width: $tablets-min-width) {
     left: 90px;
     top: 60px;
+  }
+}
+
+.customers-section__slider {
+  display: none;
+  @media screen and (max-width: $tablets-average-width) {
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    right: 50%;
+    transform: translate(50%);
   }
 }

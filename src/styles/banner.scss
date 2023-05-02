@@ -17,9 +17,9 @@
   z-index: 1;
   width: $content-box-width;
   margin-top: 231px;
-  margin-bottom: 185px;
+  margin-bottom: 185px;  
   @media screen and (max-width: $tablets-max-width) {
-    width: 992px;
+    width: 100%;
     margin-top: 154.2px;
     margin-bottom: 131.89px;
     margin-right: 20px;
